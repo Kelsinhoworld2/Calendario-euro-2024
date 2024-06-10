@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(174, 238, 238);
+    background: radial-gradient(circle, rgba(174, 238, 238, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+img {
+    margin-top: 24px;
+    width: 100px;
+    animation: move 2s ease-in-out infinite;
+}
+
+h1 {
+    color: black;
+    font-family: 'Archivo', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    appearance: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+
+table td {
+    padding: 8px;
+}
+
+footer {
+
+    font-family: 'Poppins', sans-serif;
+    padding: 16px;
+}
+
+a {
+    font-weight: 600;
+    text-decoration: none;
+    color: honeydew;
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 700px){
+    table{
+        width: 300px;
+    }
+}
